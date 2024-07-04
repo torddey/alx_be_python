@@ -34,6 +34,8 @@ def main():
     except ValueError:
         print("Invalid temperature. Please enter a numeric value.")
 
+print(convert_to_fahrenheit)
+
 if __name__ == "__main__":
     main()
 
