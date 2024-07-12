@@ -1,0 +1,20 @@
+
+# def divide(x, y):
+#   if y == 0:
+#     raise ZeroDivisionError("Division by zero is not allowed")
+#   return x / y
+import math
+x = -1
+y = -2
+ 
+try:
+    value = x / y
+    log_value = math.log(value)
+except ZeroDivisionError:
+    print('Cannot divide by zero')
+except ValueError:
+    print('Cannot calculate log of negative value')
+else:
+    print('Log value is', log_value)
+finally:
+    print('Code has finished')
