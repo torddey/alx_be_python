@@ -1,12 +1,11 @@
-class Item:
-    def __init__(self, name, price, quantity):
-        self.name = name
-        self.price = price
-        self.quantity = quantity
+from book_class import Book
 
-    def calculate_total_price(self, x, y):
-        return self.price * self.quantity
-        
+def main():
+ 
+    my_book = Book("IDGAF", "Donald Trump", 1995)
+    print(my_book)  # Expected to use __str__
+    print(repr(my_book))  # Expected to use __repr__
+    del my_book
 
-    
-
+if __name__ == "__main__":
+    main()
