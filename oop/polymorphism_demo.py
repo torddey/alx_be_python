@@ -5,14 +5,16 @@ class Shape:
         pass
 
 class Rectangle(Shape):
-    def __init__(self, lenght = int, width= int):
-        self.lenght = lenght 
+
+    def __init__(self, lenght= int, width= int):
+        self.length = length
         self.width = width
 
     def area(self):
-        return self.lenght * self.width
+        return self.length * self.width
 
 class Circle(Shape):
+
     def __init__(self, radius= int):
        self.radius = radius
        
